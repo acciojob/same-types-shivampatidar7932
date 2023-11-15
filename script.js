@@ -5,7 +5,8 @@ function isSameType(value1, value2) {
     }
 
     // Check if the types of both values are the same
-    return typeof value1 === typeof value2;
+    // and also compare the values
+    return typeof value1 === typeof value2 && value1 === value2;
 }
 
 let value1 = prompt("Enter Start of the Range.");
